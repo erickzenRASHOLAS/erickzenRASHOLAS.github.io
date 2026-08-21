@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>Prototipo De Portafolio</title>
+        <link href="./assets/css/style.css" rel="stylesheet">
     </head>
 
-    <body>
+<body>
 
     <header>
         <nav>
@@ -15,14 +16,14 @@
         </nav>
     </header>
 
-    <section id="CV">
+    <section id="CV" class="text-white bg-black font-serif">
         <h1>CV</h1>
         <p>Actualmente soy estudiante de tiempo completo en la carrera de ingenieria en informatica
             con mención en la especialidad de ciencia de datos, estudio en la insitución de DuocUC y  resido en la comuna de Puente Alt.
             poseo experiencia en multiples áreas laborales y capacidad de trabajar en grupo, adeás de ganas de nutrirme de conocimiento
 
         </p>
-        <dl>
+        <dl class="inline-1xs bg-blue-500 font-mono" >
             <dt>Octubre-Diciembre 2024: Pizzero</dt>
             <dd>El trabajo consistia en realizar multiples tareas como grupo relacionadas a la preparación de los productos,
             tareas como preparar la materia prima, realizar inventario, limpieza de utencilios, desechar la merma entre otras actividades.
@@ -36,7 +37,7 @@
         </dl>
     </section>
 
-    <section id="Portafolio">
+    <section id="Portafolio" class="font-serif bg-stone-700 text-white">
         <h1>Portafolio</h1>
         <dl>
             <dt>Proyectos de Bases de datos</dt>
@@ -53,7 +54,7 @@
 
     </section>
 
-    <section id="Contacto">
+    <section id="Contacto1" class="bg-amber-500 border-y-20 border-x-20">
         <h1>Contacto</h1>
         <dl>
             <dt>Sitios para contactarme</dt>
@@ -63,10 +64,56 @@
             <dd><a href="tel:+56931056468">WhatsApp</a></dd>
         </dl>
     </section>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsSSTwXYokGbjRsKtw4oEdNkq-EnkFtHip1ZOHGN6Gg&s=10">
+
+    <section id="Contacto" class="max-w-4xl mx-auto my-16 bg-amber-500 rounded-3xl shadow-2xl overflow-hidden p-8 sm:p-12">
+        <!-- Encabezado de la sección -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-black text-amber-950 tracking-tight mb-2">Contacto</h1>
+            <p class="text-lg text-amber-800 font-medium">Sitios para contactarme</p>
+        </div>
+
+        <!-- Contenedor de enlaces (Grid responsivo) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+
+            <!-- Primer Email -->
+            <a href="mailto:erickzen2006@gmail.com" class="group flex items-center justify-center gap-4 bg-amber-400 hover:bg-white text-amber-950 font-bold py-4 px-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-700 group-hover:text-amber-500 transition-colors">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                <span>Primer Email</span>
+            </a>
+
+            <!-- Segundo Email -->
+            <a href="mailto:erickb.rosalesparra@gmail.com" class="group flex items-center justify-center gap-4 bg-amber-400 hover:bg-white text-amber-950 font-bold py-4 px-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-700 group-hover:text-amber-500 transition-colors">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                <span>Segundo Email</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/erick-rosales-34014b2aa" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center gap-4 bg-amber-400 hover:bg-blue-600 hover:text-white text-amber-950 font-bold py-4 px-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-700 group-hover:text-white transition-colors">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+                <span>LinkedIn</span>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="tel:+56931056468" class="group flex items-center justify-center gap-4 bg-amber-400 hover:bg-green-500 hover:text-white text-amber-950 font-bold py-4 px-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-700 group-hover:text-white transition-colors">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>WhatsApp</span>
+            </a>
+
+        </div>
+    </section>
+
+    <img  class="blur-sm invert-30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsSSTwXYokGbjRsKtw4oEdNkq-EnkFtHip1ZOHGN6Gg&s=10">
     <p>Erick Rosales Todos los derechos reservados</p>
 
     <footer></footer>
 
-    </body>
+</body>
 </html>
